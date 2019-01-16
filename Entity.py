@@ -6,8 +6,8 @@ class Entity:
 class Characters(Entity):
 	
 	def __init__(self, hp, dmg):
-		self.hp = hp
-    	self.dmg = dmg
+	    self.hp = hp
+	    self.dmg = dmg
     
     def move_on(self, room_number):
     	self.room_number = room_number
