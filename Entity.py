@@ -5,23 +5,21 @@ class Entity:
 
 class Characters(Entity):
 	
-	def __init__(self, hp, dmg):
-	    self.hp = hp
-	    self.dmg = dmg
+	def __init__(self, hitpoint, damage, owner ):
+	    self.hp = hitpoint
+	    self.dmg = damage
     
     def move_on(self, room_number):
-    	self.room_number = room_number
+    	self.rn = room_number
     	room_number += 1 
 
-    def look around(self)
-    	self.objet
 
 class Weapon(Entity):
 	
-	def __init__(self, dmg):
-		self.dmg = dmg
+	def __init__(self, damage):
+		self.dmg = damage
 	
-	def attack(self, enemy, hp):
-		enemy.hp = hp
+	def attack(self, enemy, hitpoint):
+		enemy.hp = hitpoint
 		enemy.hp -= self.dmg
 
