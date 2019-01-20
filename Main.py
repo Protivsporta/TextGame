@@ -1,15 +1,19 @@
-import World
+import World 
+from GameOver import GameOver
 
 def run_game():
 
-	new_world = world.World()
+	new_world = World.World()
 
 	while True:
 		try:
-			turn(new_world)
+			turn()
 		except GameOver:
 			break
 	print('Game Over')
+
+def turn(self):
+	new_world = World()
 
 if __name__ == "__main__": 
     run_game()	
