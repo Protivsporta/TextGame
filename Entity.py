@@ -23,12 +23,6 @@ class Weapon(Entity):
 		self.name = name
 		self.dmg = int(damage)
 
-Hero = MainHero(100, 20)
-Krovosos = Characters(40, 25)
-HischniyUyeber = Characters(40, 65)
-Key = Entity('ключ')
-Fakel = Entity('факел')
-Mech = Weapon('меч', 20)
-Inventory = []
+
 	
 
